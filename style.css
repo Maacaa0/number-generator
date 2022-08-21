@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root {
+    --background-clr:#f78536;
+    --primary-clr:#dfebed;
+    --button-bg-clr:#497285;
+    --input-bg-clr: #2b4450;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Kanit", sans-serif;
+}
+
+form {
+    margin-bottom: 2em;
+    }
+
+input {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--input-bg-clr);
+    color: #ffad4e;
+    border-radius: 2em;
+    text-align: center;
+    width: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+input:focus {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #ffad4e;
+}
+
+label {
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+    margin-bottom: .8em;
+}
+
+div {
+    text-align: center;    
+    width: 25em;
+    height: 25em;
+    background-color: var(--primary-clr) ;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.textInput {
+    display: block;
+    margin: 20% auto;
+    font-size: 8em;
+    color: #150303;
+}
+
+button {
+    font-family: "Kanit";
+    background-color: var(--button-bg-clr);
+    color: #3e0000c3;
+    margin-top: 2em;
+    padding: .8em 3em;
+    border-radius: 2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transition: 100ms ease;
+}
+
+span {
+    color: #280000;
+}
+
+::selection {
+    background-color: rgb(170, 121, 65);
+}
+
+@media (max-width:500px) {
+    div {
+        width: 15em;
+        height: 15em;
+    }
+
+    .textInput {
+        font-size: 6em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+
+}
